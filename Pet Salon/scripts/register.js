@@ -9,40 +9,36 @@ let petSalon = {
     phone: "666-555-7777",
 } 
 
-console.log(petSalon);
+//constructor (add the breed and services)
+function Pet(name,age,gender,breed,service){
+    this.name=name;
+    this.age=age;
+    this.gender=gender;
+    this.breed=breed;
+    this.service=service;
+}
+//create the variables for the HTML elements
+let inputName = document.getElementById("txtName");
+let inputAge = document.getElementById("txtAge");
+let inputGender = document.getElementById("txtGender");
+let inputBreed = document.getElementById("txtBreed");
+let inputService = document.getElementById("txtService");
 
-//creating the pets
-let pet1={
-    name: "Scooby",
-    age: 60,
-    gender: "Male",
-    service: "Grooming",
-    breed: "Mastiff",
+function register(){
+
+    let newPet = new Pet(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value)//create the new object
+    //console.log(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value);
+    pets.push(newPet); //push the newPet into the existing array from below
+    console.log(pets); //display the array on the console
 }
-let pet2={
-    name: "Dooby",
-    age: 6,
-    gender: "Female",
-    service: "Trim Nails",
-    breed: "Dalmation",
-}
-let pet3={
-    name: "Doo",
-    age: 5,
-    gender: "Male",
-    service: "Bath",
-    breed: "Husky",
-}
+
+
+function init(){
+//create 3 pets
+let pet1 = new Pet("scooby",60,"Male","Poodle","Grooming");
+let pet2 = new Pet("Dooby",50,"Female","Dane","Vaccines");
+let pet3 = new Pet("Doo",40,"Male","Pitbull","Nails");
 
 pets.push(pet1,pet2,pet3);
-console.log(pets);
-
-function displayNames(){
-    for(i=0;i<pets.length,i++){
-        document.getElementById("petNames").innerHTML+=`<p> ${pets[i].name}</p>`;
 }
-    document.getElementById("petsInfo").innerHTML="We have " + pets.length + "pets";
-
-
-}
-displayNames()
+window.onload=init;//wait to render the HTML
