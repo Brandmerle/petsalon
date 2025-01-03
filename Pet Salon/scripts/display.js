@@ -1,23 +1,38 @@
 console.log("Hello from dispay pets")
 
-function displayPet(){
-    let cardsSection=document.getElementById("pets");
+function displayRow(){
+    let tableSection=document.getElementById("pets");
     let result="";
 
     for(let i=0; i<pets.length; i++){
         let pet = pets[i];
 
         result += `
-            <div id="${i}" class="card col-3 mx-2">
-                <div class="card-body">
-                    <h5 class="card-title">${pet.name} - <span class="text-secondary">${pet.service}</span> </h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">${pet.breed}</h6>
-                    <p class="card-text">${pet.gender}, ${pet.age}</p>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </div>
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Breed</th>
+                    <th scope="col">Service</th>
+                    <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>${pet.name}</td>
+                    <td>${pet.age}</td>
+                    <td>${pet.gender}</td>
+                    <td>${pet.breed}</td>
+                    <td>${pet.service}</td>
+                    <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                   
+                </tbody>
+                </table>
             </div>    
         `
     }
 
-    cardsSection.innerHTML = result;
+    tableSection.innerHTML = result;
 }

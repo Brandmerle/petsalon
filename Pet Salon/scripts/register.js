@@ -31,7 +31,7 @@ function register(){
     pets.push(newPet); //push the newPet into the existing array from below
     console.log(pets); //display the array on the console
 
-    displayPet();
+    displayRow();
     clearForm();
 }
 
@@ -52,6 +52,6 @@ let pet3 = new Pet("Doo",40,"Male","Pitbull","Nails");
 pets.push(pet1,pet2,pet3);
 console.log("pets:", pets);
 
-displayPet();
+displayRow();
 }
 window.onload=init;//wait to render the HTML
