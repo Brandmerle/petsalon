@@ -30,8 +30,18 @@ function register(){
     //console.log(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value);
     pets.push(newPet); //push the newPet into the existing array from below
     console.log(pets); //display the array on the console
+
+    displayPet();
+    clearForm();
 }
 
+function clearForm(){
+    document.getElementById("txtName").value="";
+    document.getElementById("txtAge").value="";
+    document.getElementById("txtGender").value="";
+    document.getElementById("txtBreed").value="";
+    document.getElementById("txtService").value="";
+}
 
 function init(){
 //create 3 pets
@@ -40,5 +50,8 @@ let pet2 = new Pet("Dooby",50,"Female","Dane","Vaccines");
 let pet3 = new Pet("Doo",40,"Male","Pitbull","Nails");
 
 pets.push(pet1,pet2,pet3);
+console.log("pets:", pets);
+
+displayPet();
 }
 window.onload=init;//wait to render the HTML
