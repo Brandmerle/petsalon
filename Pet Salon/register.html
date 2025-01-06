@@ -22,7 +22,7 @@
 
     </div>
     <div class="register-form">
-        <h2>Register a new pet</h2>
+        <h2>Register a New Pet</h2>
         <div class="input-control">
             <label>Name: </label>
             <input type="text" id="txtName" class="form-control">
@@ -48,6 +48,18 @@
                 <option value="Vaccines">Vaccines</option>
             </select>    
         </div>
+        <div class="input-control">
+            <label>Type: </label>
+            <select id="txtType">
+                <option value="">--Select an option--</option>
+                <option value="Dog">Dog</option> 
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                
+            </select>    
+        </div>
+
+
         <div class="btn-container">
             <button onclick="register()">Register</button>
         </div>   
@@ -56,10 +68,38 @@
     <hr>
 
     <h2>Registered Pets</h2>
+    <div>
+        <p>Total: <span id="total">0</span> </p>
+        <p>Grooming: <span id="gTotal">0</span> </p>
+        <p>Total Dogs: <span id="dogTotal">0</span></p>
+        <p>Total Cats:<span id="catTotal">0</span></p>
+        <p>Total Birds: <span id="birdTotal">0</span></p>
+    </div>
 
+    <div class="container">
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Breed</th>
+                    <th>Service</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="pets">
+                <!--here the rows are displayed-->
+
+            </tbody>
+        </table>
+    </div>
+<!-- 
     <div id="pets" class="container row">
 
     </div>
+-->
 </main>
 <body>
     <script src="./scripts/register.js"></script>
