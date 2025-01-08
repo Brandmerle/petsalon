@@ -19,7 +19,7 @@ function register(){
     let price = $("#priceInput").val();
     $("#results").append(`<li>${price}</li`);
     console.log("A new service was added");
-
+    $("input").val("");
 }
 
 function init(){
