@@ -1,10 +1,12 @@
-//*Global*/
+/*Global*/
 html,body{
     margin: 0;
     padding: 0;
 }
 body{
     font-family: arial;
+    background-color: black;
+    
 }
 /*header*/
 header{
@@ -13,6 +15,7 @@ header{
     height: 20vh;
     text-align: center;
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -23,8 +26,20 @@ h2{
     margin: 2rem 0;
 
 }
+
+
 /*register form*/
 .register-form{
+    background-color: rgb(85, 248, 60);
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    border-color: black;
+    border-style: double;
+}
+
+.services-form{
     background-color: rgb(85, 248, 60);
     width: 50%;
     margin: 1rem auto;
@@ -64,6 +79,20 @@ h2{
     padding: 10px;
     cursor: pointer;
 }
-.register{
+.splash-regular {
+    font-family: "Splash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    color: green;
+    text-align: center;
+}
 
+.splash-regular1 {
+    font-family: "Splash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+    color: black;
+    text-align: center;
 }
