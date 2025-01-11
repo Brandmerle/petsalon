@@ -53,8 +53,30 @@ function deletePet(petId){
     pets.splice(petId,1);
     displayRow();
     displayInfo();
+    
 
 
+}
+
+function getServcies(){
+    console.log("getServcies function");
+
+    let services = read();
+    let option = "";
+
+    for (let i=0; i<services.length; i++){
+        let service = services[i];
+
+        option +=
+        `
+        <option value="${service.description}">${service.description} - $ ${service.price}</option.
+        `
+    }
+
+    console.log("option: ", option);
+    
+
+    $("#txtService").append(option);
 }
 
 function init(){
@@ -68,5 +90,6 @@ console.log("pets:", pets);
 
 displayRow();
 displayTypes();
+getServcies();
 }
 window.onload=init;//wait to render the HTML

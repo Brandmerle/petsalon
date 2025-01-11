@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <h1 class="splash-regular">The Fashion Pet</h1>
+        <h1 class="splash-regular">* Rebels & Rockstars* Pet Salon </h1>
         <nav>
             <a class="btn btn-outline-success" href="index.html"> Home</a>
             <a class="btn btn-outline-success" href="services.html">Services</a>
@@ -29,38 +29,44 @@
 
 </header>
 <main class="main">
+<br>
+    <div class="about-container">
+        <img class= "my-image2" src="./images/RR.png" alt="">
+    </div>
+<br>
+
     <div id="petInfo">
 
     </div>
     <div class="register-form">
         <h2 class="splash-regular1">Register A New Pet :</h2>
         <div class="input-control">
-            <label>Name: </label>
+            <label class="text-success">Name: </label>
             <input type="text" id="txtName" class="form-control">
         </div>
         <div class="input-control">
-            <label>Age </label>
+            <label class="text-success">Age </label>
             <input type="text" id="txtAge" class="form-control">
         </div>
         <div class="input-control">
-            <label>Gender: </label>
+            <label class="text-success">Gender: </label>
             <input type="text" id="txtGender" class="form-control">
         </div>
         <div class="input-control">
-            <label>Breed: </label>
+            <label class="text-success">Breed: </label>
             <input type="text" id="txtBreed" class="form-control">
         </div>   
         <div class="input-control">
-            <label>Service: </label>
+            <label class="text-success">Service: </label>
             <select id="txtService">
                 <option value="">--Select an option--</option>
                 <option value="Grooming">🐶 Grooming</option> 
                 <option value="Nails">Nails</option>
-                <option value="Vaccines">Vaccines</option>
+                <option value="Vaccines">Vaccines</option> 
             </select>    
         </div>
         <div class="input-control">
-            <label>Type: </label>
+            <label class="text-success">Type: </label>
             <select id="txtType">
                 <option value="">--Select an option--</option>
                 <option value="Dog">Dog</option> 
@@ -81,7 +87,7 @@
     
 
     <div class="container">
-        <h2 class="splash-regular1">Registered Pets</h2>
+        <h2 class="splash-regular2">Registered Pets</h2>
         <table class="table table-dark table-hover">
             <thead>
                 <tr>
@@ -118,6 +124,8 @@
 <body>
     <script src="./scripts/register.js"></script>
     <script src="./scripts/display.js"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </body>
 <footer>
     <section class="text-center mb-4 bg-black p-4">
@@ -141,7 +149,7 @@
     
     <div class="text-success p-2" style="background-color: black">
         © 2025:
-      <a class="text-success fw-bold" href="#">TheFashionPet.com</a>
+      <a class="text-success fw-bold" href="#">R&RPetSalon.com</a>
     </div>
   </section>
   </footer>

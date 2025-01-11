@@ -27,10 +27,70 @@ h2{
 
 }
 
+.container{
+    width:80%;
+    padding:3px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.about-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;/*vertical*/
+    gap: 12px;
+    
+}
+.van-container{
+    display:flex;
+    align-items: center;/*vertical*/
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.my-image {
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.my-image1 {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    text-align: center;
+    border: 12px solid green;
+    background-color: black;
+}
+
+.my-image2 {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    text-align: center;
+    border: 12px solid green;
+    
+}
+
+.pet-item{
+    background-color: black;
+    border: 5px solid green;
+    
+    }
+
+.pet-item-text{
+    padding: 2rem;
+    text-align: center;
+    color: green;
+}
+
+
 
 /*register form*/
 .register-form{
-    background-color: rgb(85, 248, 60);
+    background-color: darkmagenta;
     width: 50%;
     margin: 1rem auto;
     padding: 1rem;
@@ -40,13 +100,14 @@ h2{
 }
 
 .services-form{
-    background-color: rgb(85, 248, 60);
+    background-color: darkmagenta;
     width: 50%;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 5px;
     border-color: black;
     border-style: double;
+    
 }
 .input-control{
     display: flex;
@@ -94,5 +155,32 @@ h2{
     font-style: normal;
     font-size: 42px;
     color: black;
+    text-align: center;
+}
+
+.splash-regular2 {
+    font-family: "Splash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 92px;
+    color: black;
+    text-align: center;
+}
+.splash-regular3 {
+    font-family: "Splash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: darkmagenta;
+    text-align: center;
+
+}
+
+.splash-regular4 {
+    font-family: "Splash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    color: dark;
     text-align: center;
 }

@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <h1 class="splash-regular">The Fashion Pet</h1>
+        <h1 class="splash-regular">* Rebels & Rockstars* Pet Salon</h1>
         <nav>
             <a class="btn btn-outline-success" href="index.html"> Home</a>
             <a class="btn btn-outline-success" href="services.html">Services</a>
@@ -27,17 +27,24 @@
 
         </nav>
     </header>
+    <br>
+    <div class="about-container">
+        <img class= "my-image2" src="./images/RR.png" alt="">
+    </div>
+<br>
     
 
     <div class="services-form" id="servicesForm">
         <h2 class="splash-regular1">Service Request : </h2>
         <div class="input-control">
-            <label>Description: </label>
-            <input type="text" id= "descriptionInput">
+            <label class="text-success">Description: </label>
+            <input type="text" id= "txtDescription">
+            <small id="desRequirementText">This field is required.</small>
         </div>
         <div class="input-control">
-            <label>Price: </label>
-            <input type="text" id="priceInput">
+            <label class="text-success">Price: </label>
+            <input type="number" id="txtPrice">
+            <small id="priceRequirementText">This field is required.</small>
         </div>
     
     <!--create register form a nd the div for displaying 
@@ -53,6 +60,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="scripts/services.js"></script>
     <script src="./scripts/display.js"></script>
+    <script src="./scripts/storeManager.js"></script>
 </body>
 <footer>
     <section class="text-center mb-4 bg-black p-4">
@@ -76,7 +84,7 @@
     
     <div class="text-success p-2" style="background-color: black">
         © 2025:
-      <a class="text-success fw-bold" href="#">TheFashionPet.com</a>
+      <a class="text-success fw-bold" href="#">R&RPetSalon.com</a>
     </div>
   </section>
   </footer>
