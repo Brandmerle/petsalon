@@ -55,7 +55,7 @@ function register(){
         save(newService);
     }
     console.log(newService);
-    save(newService); //this function is on the storeManager js
+    //save(newService); //this function is on the storeManager js
     
     //clear the form
     $("#textDescription").val("");
